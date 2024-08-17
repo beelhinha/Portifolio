@@ -27,12 +27,31 @@
         }
 
         .imagem-posicionada {
-            width: 22%;
-            height: auto;
-            margin: 66px auto;
-            display: block;
-            border: 8px solid rgb(115, 115, 156);
-        }
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 22%;
+    height: auto;
+    margin-top: 66px;
+    border: 8px solid rgb(115, 115, 156);
+}
+
+@media (max-width: 768px) {
+    .imagem-posicionada {
+        width: 50%;
+        top: 30px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagem-posicionada {
+        width: 80%;
+        top: 20px;
+        right: 5px;
+    }
+}
+
 
         @media (max-width: 768px) {
             h1, h2 {
