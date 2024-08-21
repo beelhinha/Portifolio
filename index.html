@@ -168,15 +168,6 @@ li {
             border-radius: 20px; /* Bordas arredondadas */
         }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
 
 .project {
     background-color: #1f1f1f;
@@ -253,9 +244,6 @@ section {
             <li>
                         <a href="works.html"><b>WORKS</b></a>
         </li>
-             <li>
-                        <a href="others.html"> <b>OTHERS</b></a>
-                 </li>
             </ul>
         </nav>
         <header>
@@ -274,7 +262,7 @@ section {
                     Sou programadora iniciante de front-end, uso linguagens como JavaScript e Java.<br>
                     Tenho 19 anos e estudo <strong>GTI (Gestão da tecnologia da Informação)</strong>, atualmente estou no segundo semestre.<br>
                     Moro com o meu noivo e pretendo fazer duas faculdades, além de fazer um estágio.<br>
-                    Meu objetivo é ter duas formações e ter uma situação estável, onde consigo viver com uma qualidade de vida totalmente viável e que proporcione diversas coisas, deixando também uma rotina confortável.
+                    Meu objetivo é ter duas formações e ter uma situação estável, onde consigo viver com uma qualidade de vida totalmente viável, que <br> proporcione diversas coisas, deixando também uma rotina confortável.
                 </p>
             </section>
             
@@ -287,11 +275,12 @@ section {
                 <li><strong>Curso de HTML</strong> pelo Curso em Vídeo</li>
                 <br>
                 <h4>Minhas experiências:</h4>
-                <p>Ainda não possuo experiência na área de tecnologia, mas costumo treinar programação, fazendo sites, projetos, portfólios, entre outros. Tenho experiência como repositora de mercado e operadora de loja; trabalhei 6 meses como jovem aprendiz no Carrefour.</p>
+                <p>Ainda não possuo experiência na área de tecnologia, mas costumo treinar programação, fazendo sites, projetos, portfólios, entre outros. <br>Tenho experiência como repositora de mercado e operadora de loja; trabalhei 6 meses como jovem aprendiz no Carrefour.</p>
                 <section>
                     <h3>Informações</h3>
                     <p>
-                        Mais algumas informações básicas sobre <strong>mim.</strong> Sou uma pessoa amigável e adoro jogar jogos, principalmente jogos de tiros e de desafios que necessitam de pensamento. Também gosto de jogos multiplayer e de decoração. Possuo uma gata e uma cachorra. Gosto muito de ouvir música, principalmente rock e pop internacional.
+                        Mais algumas informações básicas sobre <strong>mim.</strong> Sou uma pessoa amigável e adoro jogar jogos, principalmente jogos de tiros e <br>de desafios que necessitam de pensamento. Também gosto de jogos multiplayer e de decoração. Possuo uma gata e uma cachorra.
+                        <br>Gosto muito de ouvir música, principalmente rock e pop internacional.
                     </p>
                     <div class="container">
                         <section id="contact">
@@ -305,16 +294,36 @@ section {
                             </form>                
                         </section>
                     </div>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                     <script>
                         document.getElementById('contactForm').addEventListener('submit', function(event) {
                             event.preventDefault();
                             const email = document.getElementById('email').value;
                             if (email.includes('@')) {
-                                alert('Obrigado(a)! Em breve entrarei em contato.');
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Obrigado(a)!',
+                                    text: 'Em breve entrarei em contato.',
+                                    confirmButtonColor: '#ff4081'
+                                });
                             } else {
-                                alert('Complete as informações necessárias!');
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Erro!',
+                                    text: 'Complete as informações necessárias!',
+                                    confirmButtonColor: '#ff4081'
+                                });
                             }
                         });
+                
+                        function showProjectNotification(title, text) {
+                            Swal.fire({
+                                icon: 'info',
+                                title: title,
+                                text: text,
+                                confirmButtonColor: '#ff4081'
+                            });
+                        }
                     </script>
             </section>
         </main>
