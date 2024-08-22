@@ -8,232 +8,286 @@
 </head>
 <body>
     <style type="text/css">
-body {
-    color: #f0f0f0;
-    background-color: #121212;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    align-items: center;
-    padding: 16px;
-    background-color: #1f1f1f;
-    margin: 0;
-}
-
-a {
-    color: #f0f0f0;
-    text-decoration: none;
-    padding: 8px 16px;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #ff4081;
-}
-
-header img {
-    width: 155px;
-    height: 160px;
-    border-radius: 50%;
-    border: 5px solid #282828;
-    margin-top: 20px; /* Adiciona margem superior */
-}
-
-.center {
-    text-align: center;
-}
-
-h1 {
-    color: #ff4081;
-    font-size: 2.5rem;
-    margin: 20px 0;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1f1f1f;
-    padding: 20px 0;
-}
-
-footer a {
-    margin: 0 20px;
-    text-align: center;
-    color: #f0f0f0;
-    transition: color 0.3s ease;
-}
-
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-    font-size: 1.75rem;
-    color: #ff4081;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin: 10px 0 5px;
-    color: #f0f0f0;
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 400px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #ff4081;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e03570;
-}
-
-
-footer a:hover {
-    color: #ff4081;
-}
-
-footer p {
-    margin-top: 10px;
-    color: #5e464e;
-}
-
-h3 {
-    font-size: 1.75rem;
-    color: #ff4081;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    color: #f0f0f0;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-
-h4 {
-    padding: 0px 10px;
-    font-size: 17px;
-    color: #f0f0f0;
-}
-
-.container {
-    padding: 0px 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-li {
-            background-color: #413c3c; /* Cor de fundo */
-            margin: 5px 0; /* Espaçamento entre os itens */
-            padding: 10px; /* Espaçamento interno */
-            border-radius: 20px; /* Bordas arredondadas */
+        body {
+            color: #f0f0f0;
+            background-color: #121212;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
         }
 
+        ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: center;
+            padding: 16px;
+            background-color: #1f1f1f;
+            margin-bottom: 30px;
+        }
 
-.project {
-    background-color: #1f1f1f;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
+        a {
+            color: #f0f0f0;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+        }
 
-.project:hover {
-    transform: translateY(-10px);
-}
+        a:hover {
+            color: #ff4081;
+        }
+
+        header img {
+            width: 155px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid #282828;
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 20px 0;
+        }
+
+        footer a {
+            margin: 0 20px;
+            text-align: center;
+            color: #f0f0f0;
+            transition: color 0.3s ease;
+        }
+
+        section {
+            font-size: 1.3rem;
+            color: #ffffff;
+            background-color: rgba(25, 24, 24, 0.2);
+            margin: 5px 0;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            color: #f0f0f0;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e03570;
+        }
+
+        footer a:hover {
+            color: #ff4081;
+        }
+
+        footer p {
+            margin-top: 10px;
+            color: #5e464e;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            color: #ff4081;
+            background-color: rgba(25, 24, 24, 0.2);
+            margin: 5px 0;
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #f0f0f0;
+            line-height: 2.0;
+            text-align: justify;
+        }
+
+        h4 {
+            font-size: 1.75rem;
+            color: #ff4081;
+            background-color: rgba(25, 24, 24, 0.2);
+            margin: 5px 0;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+            max-width: 1200px;
+            border-radius: 10px;
+        }
+
+        .container {
+            padding: 0px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        li {
+            margin: 5px 0;
+            text-align: justify;
+            font-size: 1.3rem;
+            padding: 8px;
+            border-radius: 20px;
+        }
+
+        .project {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
 
         @media (min-width: 768px) {
-    .container {
-        padding: 0px 50px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-}
+            .container {
+                padding: 0px 50px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
 
-/* Estilos para tablets */
-@media (max-width: 768px) {
-    ul {
-        flex-direction: column;
-    }
+        @media (max-width: 768px) {
+            ul {
+                flex-direction: column;
+            }
 
-    header img {
-        width: 120px;
-        height: 125px;
-    }
+            header img {
+                width: 120px;
+                height: 125px;
+            }
 
-    h1 {
-        font-size: 2rem;
-    }
 
-    .container {
-        padding: 0px 20px;
-    }
-}
+            .container {
+                padding: 0px 20px;
+            }
+        }
 
-/* Estilos para celulares */
-@media (max-width: 480px) {
-    ul {
-        flex-direction: column;
-    }
+        @media (max-width: 480px) {
+            ul {
+                flex-direction: column;
+            }
 
-    header img {
-        width: 100px;
-        height: 105px;
-    }
+            header img {
+                width: 100px;
+                height: 105px;
+            }
 
-    h1 {
-        font-size: 1.5rem;
-    }
+            h1 {
+                font-size: 1.5rem;
+            }
 
-    .container {
-        padding: 0px 10px;
-    }
+            .container {
+                padding: 0px 10px;
+            }
 
-    input {
-        width: 100%;
-    }
-}
+            input {
+                width: 100%;
+            }
+        }
+
+        /* Fundo animado */
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(75,0,130,1) 100%);
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100vw);
+            }
+        }
     </style>
+</head>
+<body>
+    <div id="background">
+        <!-- Partículas animadas -->
+        <div class="particle" style="top: 90%; top: 10%; animation-duration: 12s;"></div>
+        <div class="particle" style="top: 80%; top: 20%; animation-duration: 15s;"></div>
+        <div class="particle" style="top: 70%; top: 30%; animation-duration: 10s;"></div>
+        <div class="particle" style="top: 60%; top: 40%; animation-duration: 18s;"></div>
+        <div class="particle" style="top: 50%; top: 50%; animation-duration: 14s;"></div>
+        <div class="particle" style="top: 40%; left: 60%; animation-duration: 20s;"></div>
+        <div class="particle" style="top: 30%; left: 70%; animation-duration: 16s;"></div>
+        <div class="particle" style="top: 20%; top: 80%; animation-duration: 22s;"></div>
+        <div class="particle" style="top: 10%; top: 90%; animation-duration: 19s;"></div>
+        <!-- Adicionando mais partículas -->
+        <div class="particle" style="top: 95%; top: 5%; animation-duration: 20s;"></div>
+        <div class="particle" style="top: 85%; top: 15%; animation-duration: 17s;"></div>
+        <div class="particle" style="top: 75%; top: 25%; animation-duration: 11s;"></div>
+        <div class="particle" style="top: 65%; top: 35%; animation-duration: 19s;"></div>
+        <div class="particle" style="top: 55%; right: 45%; animation-duration: 16s;"></div>
+        <div class="particle" style="top: 45%; right: 55%; animation-duration: 21s;"></div>
+        <div class="particle" style="top: 35%; right: 65%; animation-duration: 20s;"></div>
+        <div class="particle" style="top: 25%; left: 75%; animation-duration: 18s;"></div>
+        <div class="particle" style="top: 15%; right: 85%; animation-duration: 20s;"></div>
+        <div class="particle" style="top: 5%; right: 95%; animation-duration: 12s;"></div>
+    </div>
+    <header class="center">
     <div class="container"> 
         <nav>
             <ul>
@@ -262,7 +316,7 @@ li {
                     Sou programadora iniciante de front-end, uso linguagens como JavaScript e Java.<br>
                     Tenho 19 anos e estudo <strong>GTI (Gestão da tecnologia da Informação)</strong>, atualmente estou no segundo semestre.<br>
                     Moro com o meu noivo e pretendo fazer duas faculdades, além de fazer um estágio.<br>
-                    Meu objetivo é ter duas formações e ter uma situação estável, onde consigo viver com uma qualidade de vida totalmente viável, que <br> proporcione diversas coisas, deixando também uma rotina confortável.
+                    Meu objetivo é ter duas formações e ter uma situação estável, onde consigo viver com uma qualidade de vida totalmente viável <br> que proporcione diversas coisas, deixando também uma rotina confortável.
                 </p>
             </section>
             
@@ -274,14 +328,9 @@ li {
                 <li><strong>Curso de Algoritmos</strong> pelo Curso em Vídeo</li>
                 <li><strong>Curso de HTML</strong> pelo Curso em Vídeo</li>
                 <br>
-                <h4>Minhas experiências:</h4>
+                <h4>Experiências</h4>
                 <p>Ainda não possuo experiência na área de tecnologia, mas costumo treinar programação, fazendo sites, projetos, portfólios, entre outros. <br>Tenho experiência como repositora de mercado e operadora de loja; trabalhei 6 meses como jovem aprendiz no Carrefour.</p>
                 <section>
-                    <h3>Informações</h3>
-                    <p>
-                        Mais algumas informações básicas sobre <strong>mim.</strong> Sou uma pessoa amigável e adoro jogar jogos, principalmente jogos de tiros e <br>de desafios que necessitam de pensamento. Também gosto de jogos multiplayer e de decoração. Possuo uma gata e uma cachorra.
-                        <br>Gosto muito de ouvir música, principalmente rock e pop internacional.
-                    </p>
                     <div class="container">
                         <section id="contact">
                             <h3>Contato geral</h3>
