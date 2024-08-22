@@ -7,3 +7,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         alert('O contato do email não foi aceito.');
     }
 });
+
+
+//teste
